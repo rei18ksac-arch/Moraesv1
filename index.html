@@ -452,9 +452,28 @@
 
   /* RESPONSIVE */
   @media (max-width: 1024px) {
-    .hero-inner { grid-template-columns: 1fr; }
-    .hero-photo { display: none; }
-    .hero-left { padding-right: 0; }
+    .hero-inner {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      padding-bottom: 0;
+    }
+    .hero-photo {
+      display: flex;
+      order: -1;
+      justify-content: center;
+      align-items: flex-end;
+      padding-top: 1rem;
+      padding-bottom: 0;
+    }
+    .hero-photo img {
+      max-width: 280px;
+      width: 70%;
+    }
+    .hero-photo-card {
+      bottom: 1.5rem;
+      left: 0;
+    }
+    .hero-left { padding-right: 0; padding-bottom: 4rem; }
     .services-grid { grid-template-columns: repeat(2, 1fr); }
     .diff-grid { grid-template-columns: repeat(2, 1fr); }
     .reviews-grid { grid-template-columns: repeat(2, 1fr); }
@@ -525,8 +544,8 @@
       <h1>Segurança Jurídica<br>e <em>Excelência</em><br>Contábil</h1>
       <p class="hero-sub">O Dr. Rodrigo Moraes une expertise jurídica e contábil para oferecer soluções integradas que protegem e fazem crescer o seu patrimônio.</p>
       <div class="hero-cta">
-        <a href="#contato" class="btn-primary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.22 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.09 6.09l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg>
+        <a href="https://wa.me/5519992795102?text=Ol%C3%A1!%20Tenho%20interesse%20em%20abrir%20minha%20empresa." target="_blank" class="btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.115.554 4.1 1.524 5.82L.057 23.571l5.903-1.449A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.007-1.37l-.359-.213-3.503.861.881-3.413-.234-.37A9.818 9.818 0 1112 21.818z"/></svg>
           Falar com Dr. Rodrigo
         </a>
         <a href="#servicos" class="btn-outline-hero">Nossos Serviços</a>
@@ -794,7 +813,7 @@
   <div class="section-inner">
     <h2>Pronto para ter uma contabilidade<br>que vai além dos números?</h2>
     <p>Agende uma consulta gratuita com o Dr. Rodrigo Moraes e descubra como a visão jurídico-contábil pode transformar seu negócio.</p>
-    <a href="https://wa.me/5511999999999" target="_blank" class="btn-dark">
+    <a href="https://wa.me/5519992795102?text=Ol%C3%A1!%20Tenho%20interesse%20em%20abrir%20minha%20empresa." target="_blank" class="btn-dark">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="opacity:.8"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.115.554 4.1 1.524 5.82L.057 23.571l5.903-1.449A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.007-1.37l-.359-.213-3.503.861.881-3.413-.234-.37A9.818 9.818 0 1112 21.818z"/></svg>
       Consulta Gratuita com Dr. Rodrigo
     </a>
@@ -814,7 +833,7 @@
         </div>
         <div class="ci-item">
           <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-          <div class="ci-text"><strong>E-mail</strong><span>contato@moraescontabilidade.com.br</span></div>
+          <div class="ci-text"><strong>E-mail</strong><span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3a5955544e5b4e557a5755485b5f495955544e5b585356535e5b5e5f14595557145848">[email&#160;protected]</a></span></div>
         </div>
         <div class="ci-item">
           <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
@@ -884,7 +903,7 @@
         <h5>Contato</h5>
         <ul>
           <li><a href="tel:+5511999999999">(11) 9 9999-9999</a></li>
-          <li><a href="mailto:contato@moraescontabilidade.com.br">contato@moraes<br>contabilidade.com.br</a></li>
+          <li><a href="/cdn-cgi/l/email-protection#f4979b9a8095809bb4999b86959187979b9a8095969d989d90959091da979b99da9686">contato@moraes<br>contabilidade.com.br</a></li>
           <li><a href="#">Av. Paulista, 1000</a></li>
           <li><a href="#">São Paulo / SP</a></li>
         </ul>
@@ -907,7 +926,7 @@
   <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.115.554 4.1 1.524 5.82L.057 23.571l5.903-1.449A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.007-1.37l-.359-.213-3.503.861.881-3.413-.234-.37A9.818 9.818 0 1112 21.818z"/></svg>
 </a>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   const header = document.getElementById('header');
   window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 30); });
 
@@ -949,12 +968,4 @@
     }, 3500);
   }
 
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', e => {
-      const target = document.querySelector(a.getAttribute('href'));
-      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
-    });
-  });
-</script>
-</body>
-</html>
+  documen
